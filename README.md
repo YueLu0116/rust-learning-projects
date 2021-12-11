@@ -1,4 +1,4 @@
-# Simple Porjects for Learning Rust
+# Simple Projects for Learning Rust
 
 ## Layout
 - the-book\\: samples from [_The Rust Programming Language_](https://doc.rust-lang.org/book/)

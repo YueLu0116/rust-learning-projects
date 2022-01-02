@@ -29,10 +29,10 @@ pub mod device{
             }
         }
         if let Ok(_file) = fs::File::open(&path){
-            if let Ok(content) = fs::read_to_string(path) {
+            if let Ok(content) = fs::read_to_string(&path) {
                 println!("device: {}", content);
             } else{
-                return Err("Cannot get device information. Read file {} error.");
+                return Err("Cannot get device information. Read file error.");
             }
         } else{
             return Err("No device detected. Is it connected?");

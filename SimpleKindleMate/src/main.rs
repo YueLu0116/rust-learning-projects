@@ -4,8 +4,11 @@ mod utils;
 use utils::device;
 
 fn main() {
-    if let Err(err) = device::device_info(){
-        eprintln!("Application error: {}", err);
+
+    if device::is_connected(){
+        println!("Kindle detected");
+    } else{
+        eprintln!("Kindle not connected");
         process::exit(1);
     }
 }

@@ -44,3 +44,42 @@ Use crate `assert_cmd`
 >
 > [dev-dependencies]
 > assert_cmd = "1"
+
+## Chapter 2 echor
+
+**debug print**
+
+```rust
+fn main() {
+    println!("{:?}", std::env::args());
+    // {:#?}: pretty-printing
+}
+```
+
+**seperate `cargo`'s option from user inputs**
+
+```bash
+$ cargo run -- -n hello
+```
+
+**things behind adding dependencies**
+
+> “Cargo places the download source code into `$HOME/.cargo`, and the build artifacts go into the `target/debug/deps` directory. This brings up an interesting part of building Rust projects: Each program you build can use different versions of crates, and each program is built in a separate directory.”
+>
+
+**redirect different channels in shell**
+
+```bash
+$ cargo run 1>out 2>err
+```
+
+**join strings**
+
+**backtrace in cargo**
+
+```bash
+$ RUST_BACKTRACE=1 cargo run
+```
+
+
+

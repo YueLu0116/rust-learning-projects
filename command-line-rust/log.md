@@ -45,6 +45,12 @@ Use crate `assert_cmd`
 > [dev-dependencies]
 > assert_cmd = "1"
 
+**development dependencies**
+
+> [Development dependencies](https://doc.rust-lang.org/rust-by-example/testing/dev_dependencies.html)
+
+Dependendies for tests or benchmarks. Only used for current package and not propagated to others.
+
 ## Chapter 2 echor
 
 **debug print**
@@ -81,5 +87,11 @@ $ cargo run 1>out 2>err
 $ RUST_BACKTRACE=1 cargo run
 ```
 
+**`Box<dyn std::error::Error>`**
 
+> “Err part can hold anything that implements the std::error::Error trait”
+>
 
+**print without a newline**
+
+`println` marco will add a newline in outputs. Use `print!` to avoid a newline. 

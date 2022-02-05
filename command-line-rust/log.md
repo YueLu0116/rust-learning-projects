@@ -95,3 +95,8 @@ $ RUST_BACKTRACE=1 cargo run
 **print without a newline**
 
 `println` marco will add a newline in outputs. Use `print!` to avoid a newline. 
+
+## Chapter 3 catr
+
+**and then**
+Use `Result::and_then` to pass the Ok parameters to the next function
